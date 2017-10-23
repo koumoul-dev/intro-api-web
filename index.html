@@ -38,8 +38,8 @@
 				<section>
 					<h5>Métaphore de la prise électrique</h5>
 					<ul>
-						<li>Je n'ai pas à connaitre comment marche le transformateur ou la centrale électrique, ni comment est acheminé le courrant</li>
-						<li>Je branche ma prise et j'ai du 220V en alternatif : je déménage dans un autre logement et je peux encore brancher mon frigo</li>
+						<li>Je n'ai pas à connaitre comment marche le transformateur ou la centrale électrique, ni comment est acheminé le courant</li>
+						<li>Je branche ma prise et j'ai du 220V en alternatif : je déménage dans un autre logement et je peux encore brancher mon réfrigérateur</li>
 						<li>Je vais avoir du courrant électrique tout le temps : je peux mettre des choses dans le congélateur ...</li>
 						<!-- <li>Même inconvénient: pas de prise, ca marche pas</li> -->
 					</ul>
@@ -47,6 +47,7 @@
 				<section>
 					<h5>Qu'est-ce que c'est ?</h5>
 					<ul>
+						<li>Application Programming Interface</li>
 						<li>Permet a une application de mettre ses fonctionnalités et données a disposition d'autres applications</li>
 						<li>Exemple de fonctionnalité : navigation dans une carte avec zoom et drag</li>
 						<li>Exemple de données : les images de fond de carte</li>
@@ -55,11 +56,10 @@
 				</section>
 				<section>
 					<h5>A quoi ca sert ?</h5>
+					<img src="img/2318.WithAPIArchitecture1.png" alt="What is API" style="width:60%">
 					<ul>
-						<li>Plusieurs types d'appareils : smartphone, ordinateur, télévision, objets connectés ...</li>
-						<li>Des applications pour caque type d'appareil. Exemple : Netflix sur smartphone, navigateur web, télévision</li>
-						<li>Ces applications ont besoin de données pour fonctionner, comme le courant pour les appareils électriques</li>
-						<li>Des applications différentes qui ont besoin des mêmes données / fonctionnalités. Exemple : système de paiement</li>
+						<li>Les applications ont besoin de données pour fonctionner <=> courant pour les appareils électriques</li>
+						<li>Des applications différentes qui ont des besoins similaires. Exemple : système de paiement</li>
 						<li>Les APIs facilitent <strong>l'interopérabilité</strong></li>
 					</ul>
 				</section>
@@ -95,10 +95,11 @@
 				<section>
 					<h5>Objectif</h5>
 					<ul>
-						<li>Une autre manière de monayer ses données où son savoir faire</li>
+						<li>Une autre manière de monnayer ses données ou son savoir faire</li>
 						<li>Devenir standard pour être incontournable</li>
 						<li>Etre consommée par le plus grand nombre</li>
 						<li>La concurrence peut être rude !</li>
+						<li>API en tant que produit</li>
 					</ul>
 				</section>
 				<section>
@@ -106,11 +107,7 @@
 					<ul>
 						<li>En général différentes gammes d'abonnement</li>
 						<li>Limitation sur le volume de données ou le nombre d'appels par mois</li>
-						<li>Revenus réguliers, permet de voir à plus long terme</li>
-						<li>Fidéliser les clients au maximum</li>
 					</ul>
-				</section>
-				<section>
 					<h5>A la consommation</h5>
 					<ul>
 						<li>Possibilité de mesurer très finement la consommation</li>
@@ -126,26 +123,28 @@
 					<h5>Contrat de service</h5>
 					<ul>
 						<li>Le format des données est contractualisé, tout comme la manière d'utiliser l'API</li>
-						<li>Il ne faut pas avoir besoin de mettre à jour les applications qui consomment une API quand celle-ci évolue</li>
-						<li>Si le contrat ne convient pas, on peut faire des adaptateurs ou des connecteurs (ex: courrant électrique)</li>
+						<li>Il ne faut pas avoir besoin de mettre à jour les applications qui consomment une API qui évolue</li>
+						<li>Si le contrat ne convient pas, on peut faire des adaptateurs ou des connecteurs</li>
 					</ul>
+					<img src="img/adaptateur-caravaning.jpg" alt="Adaptateur de prise" style="width:30%">
 				</section>
 				<section>
 					<h5>Garantie de service</h5>
+					<img src="img/cloud-service-level-agreement-expectations.jpg" alt="SLA 100%" style="width:50%">
 					<ul>
-						<li>Le service doit tourner tout le temps</li>
+						<li>Le service doit tourner tout le temps, 24h / 24h</li>
 						<li>Problèmes qui peuvent être conséquents si coupures</li>
-						<li>Besoin d'astreintes, notion de SLA: Service-level agreement</li>
+						<li>SLA: Service-level agreement. 99.99% =	52 minutes, 36 secondes de coupure par an au maximum</li>
 					</ul>
 				</section>
-				<section>
+				<!-- <section>
 					<h5>Compatibilité ascendante</h5>
 					<ul>
 						<li>Nouvelles versions ou fonctionnalités de l'API : les applications la consommant doivent toujours marcher</li>
 						<li>Le téléphone a continué a fonctionné avec l'arrivée de l'ADSL</li>
 						<li>Le CPL n'a pas géné le réseau électrique du domicile</li>
 					</ul>
-				</section>
+				</section> -->
 			</section>
 
 			<section>
@@ -156,17 +155,20 @@
 						<li>Souvent négligée, pourtant vitale</li>
 						<li>Facilite la (ré)utilisation et donc l'adoption de votre API</li>
 						<!-- <li>Si profits liés a l'utilisation, augmente les profits</li> -->
-						<li>Même en interne, même seul facilite la réutilisation. Je suis le premier lecteur de mes documentations d'API.</li>
-						<li>Utiliser des standards : le developpeur rentre plus facilement dans la documentation</li>
+						<li>Même en interne, même seul facilite la réutilisation. Je suis le premier lecteur de mes documentations d'API</li>
+						<li>Utiliser des standards comme <a href="https://www.openapis.org/">OpenAPI</a> : le developpeur rentre plus facilement dans la documentation</li>
+						<li>Exemple : <a href="https://koumoul.com/openapi-viewer/?url=https://koumoul.com/s/geocoder/api/v1/api-docs.json&proxy=false">API de géocodage</a></li>
 					</ul>
+					<img src="img/OpenAPI_Pantone.png" alt="OpenAPI" style="width:30%">
 				</section>
 				<section>
 					<h5>Objectif</h5>
 					<ul>
-						<li>Utilisation par le maximum de monde</li>
-						<li>Un développeur doit pouvoir faire le premier appel en moins de 5 minutes</li>
+						<li>Maximiser l'utilisation de votre API auprès d'un certain public</li>
+						<li>Un développeur doit pouvoir faire le premier appel (TTFAC : Time To First API Call) en moins de 5 minutes</li>
 						<li>Bien comprendre l'intéret, la valeur ajoutée de votre API</li>
 					</ul>
+					<img src="img/the-nexosis-api-10-638.jpg" alt="API Lego" style="width:50%">
 				</section>
 			</section>
 
@@ -188,26 +190,18 @@
 						<li>Gestion de quotas</li>
 						<li>Permissions fines</li>
 						<li>Accès personnel ou de groupe</li>
-						<li>Tracabilité, activité ?</li>
+						<li>Tracabilité, mesure de l'activité</li>
 					</ul>
 				</section>
 				<section>
 					<h5>Accès universel</h5>
 					<ul>
 						<li>REST : On utilise HTTP qui est standard</li>
+						<li>Permet de casser les silos : des données peuvent être réutilisées dans d'autres contextes</li>
 						<li>Permet de s'ouvrir progressivement au reste du monde (ou pas)</li>
-						<li>Permet de casser les silos</li>
 					</ul>
+					<img src="img/Private-partner-public-APIs.png" alt="Private partner and public API" style="width:80%">
 				</section>
-			</section>
-
-			<section>
-				<h4>Limitations</h4>
-				<ul>
-					<li>Perte d'autonomie : les applications ne peuvent plus fonctionner toutes seules</li>
-					<li>L'aspect contractuel implique une certaine rigidité, qui peut freiner l'évolutivité</li>
-					<li>Données collectées : nécessité de bien encadrer tout ça (GDPR, ...)</li>
-				</ul>
 			</section>
 
 			<section>
@@ -215,13 +209,13 @@
 				<section>
 					<h5>Métaphore du poste de radio (sans piles)</h5>
 					<ul>
-						<li>Connecté à plusieurs flux</li>
-						<li>Electricité sur secteur</li>
-						<li>Ondes radio</li>
+						<li>Connecté à plusieurs flux: courant électrique sur secteur et ondes radios</li>
+						<li>Fourni un nouveau service en utilisant 2 briques de base</li>
 					</ul>
+					<img src="img/radio.png" alt="Radio" style="width:40%">
 				</section>
 				<section>
-					<h5>Mashup</h5>
+					<img src="img/api-mashup.jpg" alt="API mashup" style="width:30%">
 					<ul>
 						<li>On construit une application en utilisant les fonctionnalités ou données de plusieurs APIs</li>
 						<li>ITTT : If This Then That</li>
@@ -236,19 +230,35 @@
 						<li>Casser les silos favorise l'innovation</li>
 						<li>Il faut pouvoir connaître ce que l'on a sous la main</li>
 						<li>Les catalogues d'API permettent de s'y retrouver</li>
-						<li><a href="https://developer.laposte.fr/products">La Poste</a>, <a href="https://data.rte-france.com/">RTE</a>, ...</li>
+						<li><a href="https://developer.laposte.fr/products">La Poste</a>, <a href="https://data.rte-france.com/">RTE</a>, <a href="https://www.emploi-store-dev.fr/portail-developpeur/catalogueapi">Pôle Emploi</a>...</li>
 					</ul>
+					<span>
+						<img src="img/pw-logo.png" alt="Programmable Web" style="width:50%">
+						<img src="img/apis-guru.jpg" alt="API Guru" style="width:30%">
+					</span>
 				</section>
 			</section>
+
+			<section>
+				<h4>Limitations</h4>
+				<ul>
+					<li>Perte d'autonomie : les applications ne peuvent plus fonctionner toutes seules</li>
+					<li>L'aspect contractuel implique une certaine rigidité, qui peut freiner l'évolutivité</li>
+					<li>Données collectées : nécessité de bien encadrer tout ça (GDPR, ...)</li>
+				</ul>
+			</section>
+
 			<section>
 				<h4>Conclusion</h4>
+				<img src="img/why-need-api.jpg" alt="why need api" style="width:70%">
 				<ul>
 					<li>Monétisation, nouvelle opportunité de business</li>
-					<li>contrat + manuel = meilleure qualité</li>
-					<li>Avant tout utile en interne</li>
+					<li>Obligation de contractualiser et documenter => amélioration de la qualité</li>
+					<li>Avant tout utile en interne (Ex: Netflix: 99.9 % de l'utilisation est interne)</li>
 					<li>Tendance de fond: si on y va pas on peut être remplacé à terme (ex IGN, Pages Jaunes, ...)</li>
 				</ul>
 			</section>
+
 			<section>
 				<h3>Merci !</h3> Des questions ?
 			</section>

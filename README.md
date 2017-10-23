@@ -19,3 +19,4 @@ reveal deploy
 
  * http://www.dailymotion.com/video/xxqeka_smctalks-l-avenement-des-api-s2e3_tech
  * http://www.zdnet.fr/actualites/les-api-futur-de-l-industrie-39809755.htm
+ * https://blog.octo.com/strategie-d-architecture-api/
