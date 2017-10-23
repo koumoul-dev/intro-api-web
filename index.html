@@ -32,23 +32,155 @@
 				<a href="https://koumoul.com">koumoul.com</a> -
 				<a href="mailto:contact@koumoul.com">contact@koumoul.com</a>
 			</section>
+
 			<section>
+				<h4>Une API Web . . .</h4>
 				<section>
-					<h4>Métaphore de la prise électrique</h4>
+					<h5>Métaphore de la prise électrique</h5>
 					<ul>
-						<li>Pas a connaitre comment marche le transformateur ou la centrale</li>
-						<li>Je branche ma prise et j'ai du 220V en alternatif</li>
+						<li>Je n'ai pas à connaitre comment marche le transformateur ou la centrale électrique, ni comment est acheminé le courrant</li>
+						<li>Je branche ma prise et j'ai du 220V en alternatif : je déménage dans un autre logement et je peux encore brancher mon frigo</li>
+						<li>Je vais avoir du courrant électrique tout le temps : je peux mettre des choses dans le congélateur ...</li>
+						<!-- <li>Même inconvénient: pas de prise, ca marche pas</li> -->
 					</ul>
 				</section>
 				<section>
-					<h5>Contrat</h5>
+					<h5>Qu'est-ce que c'est ?</h5>
 					<ul>
-						<li>Important, ca bouge pas</li>
+						<li>Permet a une application de mettre ses fonctionnalités et données a disposition d'autres applications</li>
+						<li>Exemple de fonctionnalité : navigation dans une carte avec zoom et drag</li>
+						<li>Exemple de données : les images de fond de carte</li>
+						<li>En mode Web : rien à installer, on passe par le réseau</li>
+					</ul>
+				</section>
+				<section>
+					<h5>A quoi ca sert ?</h5>
+					<ul>
+						<li>Plusieurs types d'appareils : smartphone, ordinateur, télévision, objets connectés ...</li>
+						<li>Des applications pour caque type d'appareil. Exemple : Netflix sur smartphone, navigateur web, télévision</li>
+						<li>Ces applications ont besoin de données pour fonctionner, comme le courant pour les appareils électriques</li>
+						<li>Des applications différentes qui ont besoin des mêmes données / fonctionnalités. Exemple : système de paiement</li>
+						<li>Les APIs facilitent <strong>l'interopérabilité</strong></li>
+					</ul>
+				</section>
+				<section>
+					<h5>C'est un service</h5>
+					<ul>
+						<li>Comme l'eau, l'électricité ou l'accès à internet</li>
+						<li>Fonctionnalités ou données en tant que service</li>
+						<li>Manière d'exposer son métier (sur le Web, l'exposition peut être mondiale)</li>
+						<li><strong>Mises à jour en continu, données fraîches</strong></li>
+						<li>Coûts récurrents plutôt qu'investissement</li>
+						<li>Permet une élasticité : les dépenses grossissent avec la taille du business</li>
+					</ul>
+				</section>
+				<section>
+					<h5>Ca revêt quelle forme ?</h5>
+					<ul>
+						<li>Service web : adresse Web à laquelle on se connecte</li>
+						<li>Accès via le réseau</li>
+						<li>Contrat d'utilisation</li>
+						<li>Documentation décrivant son utilisation</li>
+						<li>Pour l'application cliente, elle est vue comme une boîte noire</li>
+					</ul>
+				</section>
+				<section>
+					<h5>C'est de plus en plus utilisé</h5>
+					<img src="img/API Growth Since 2005 ProgrammableWeb.jpg" alt="Croissance du nombre d'APIs" style="width:75%">
+				</section>
+			</section>
+
+			<section>
+				<h4>Modèles économiques</h4>
+				<section>
+					<h5>Objectif</h5>
+					<ul>
+						<li>Une autre manière de monayer ses données où son savoir faire</li>
+						<li>Devenir standard pour être incontournable</li>
+						<li>Etre consommée par le plus grand nombre</li>
+						<li>La concurrence peut être rude !</li>
+					</ul>
+				</section>
+				<section>
+					<h5>Abonnement</h5>
+					<ul>
+						<li>En général différentes gammes d'abonnement</li>
+						<li>Limitation sur le volume de données ou le nombre d'appels par mois</li>
+						<li>Revenus réguliers, permet de voir à plus long terme</li>
+						<li>Fidéliser les clients au maximum</li>
+					</ul>
+				</section>
+				<section>
+					<h5>A la consommation</h5>
+					<ul>
+						<li>Possibilité de mesurer très finement la consommation</li>
+						<li>Pay for what you use</li>
+						<li>Sentiment d'efficacité coté client : pas d'argent gaspillé</li>
 					</ul>
 				</section>
 			</section>
+
+			<section>
+				<h4>Stabilité</h4>
+				<section>
+					<h5>Contrat de service</h5>
+					<ul>
+						<li>Le format des données est contractualisé, tout comme la manière d'utiliser l'API</li>
+						<li>Il ne faut pas avoir besoin de mettre à jour les applications qui consomment une API quand celle-ci évolue</li>
+						<li>Si le contrat ne convient pas, on peut faire des adaptateurs ou des connecteurs (ex: courrant électrique)</li>
+					</ul>
+				</section>
+				<section>
+					<h5>Garantie de service</h5>
+					<ul>
+						<li>Le service doit tourner tout le temps</li>
+						<li>Problèmes qui peuvent être conséquents si coupures</li>
+						<li>Besoin d'astreintes, notion de SLA: Service-level agreement</li>
+					</ul>
+				</section>
+				<section>
+					<h5>Compatibilité ascendante</h5>
+					<ul>
+						<li>Nouvelles versions ou fonctionnalités de l'API : les applications la consommant doivent toujours marcher</li>
+						<li>Le téléphone a continué a fonctionné avec l'arrivée de l'ADSL</li>
+						<li>Le CPL n'a pas géné le réseau électrique du domicile</li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<h4>Le manuel d'utilisation</h4>
+				<section>
+					<h5>Documentation</h5>
+					<ul>
+						<li>Souvent négligée, pourtant vitale</li>
+						<li>Facilite la (ré)utilisation et donc l'adoption de votre API</li>
+						<!-- <li>Si profits liés a l'utilisation, augmente les profits</li> -->
+						<li>Même en interne, même seul facilite la réutilisation. Je suis le premier lecteur de mes documentations d'API.</li>
+						<li>Utiliser des standards : le developpeur rentre plus facilement dans la documentation</li>
+					</ul>
+				</section>
+				<section>
+					<h5>Objectif</h5>
+					<ul>
+						<li>Utilisation par le maximum de monde</li>
+						<li>Un développeur doit pouvoir faire le premier appel en moins de 5 minutes</li>
+						<li>Bien comprendre l'intéret, la valeur ajoutée de votre API</li>
+					</ul>
+				</section>
+			</section>
+
 			<section>
 				<h4>Différence avec une base de données</h4>
+				<section>
+					<h4>Pourquoi ne pas se connecter directement à une base de données ?</h4>
+					<ul>
+						<li>Problèmes de sécurité</li>
+						<li>On ne peut pas accéder à la base de n'importe où</li>
+						<li>Une fois qu'on accède à une base, on a accès à toutes les données</li>
+						<li>Lire les données peut être difficile : ex jointures entre plusieurs tables</li>
+					</ul>
+				</section>
 				<section>
 					<h5>Authentification</h5>
 					<ul>
@@ -62,27 +194,59 @@
 				<section>
 					<h5>Accès universel</h5>
 					<ul>
-						<li>REST</li>
-						<li>On utilise HTTP qui est standard</li>
+						<li>REST : On utilise HTTP qui est standard</li>
+						<li>Permet de s'ouvrir progressivement au reste du monde (ou pas)</li>
+						<li>Permet de casser les silos</li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<h4>Limitations</h4>
+				<ul>
+					<li>Perte d'autonomie : les applications ne peuvent plus fonctionner toutes seules</li>
+					<li>L'aspect contractuel implique une certaine rigidité, qui peut freiner l'évolutivité</li>
+					<li>Données collectées : nécessité de bien encadrer tout ça (GDPR, ...)</li>
+				</ul>
+			</section>
+
+			<section>
+				<h4>Composition d'API</h4>
+				<section>
+					<h5>Métaphore du poste de radio (sans piles)</h5>
+					<ul>
+						<li>Connecté à plusieurs flux</li>
+						<li>Electricité sur secteur</li>
+						<li>Ondes radio</li>
+					</ul>
+				</section>
+				<section>
+					<h5>Mashup</h5>
+					<ul>
+						<li>On construit une application en utilisant les fonctionnalités ou données de plusieurs APIs</li>
+						<li>ITTT : If This Then That</li>
+						<li>Créer des interactions sans avoir à coder</li>
+						<li>Notification quand la météo annonce de la pluie</li>
+						<li>Si une nouvelle photo est partagée sur Facebook, alors elle se voit automatiquement sauvegardée sur Flickr</li>
+					</ul>
+				</section>
+				<section>
+					<h5>Catalogage</h5>
+					<ul>
+						<li>Casser les silos favorise l'innovation</li>
+						<li>Il faut pouvoir connaître ce que l'on a sous la main</li>
+						<li>Les catalogues d'API permettent de s'y retrouver</li>
+						<li><a href="https://developer.laposte.fr/products">La Poste</a>, <a href="https://data.rte-france.com/">RTE</a>, ...</li>
 					</ul>
 				</section>
 			</section>
 			<section>
-				<h4>Documentation</h4>
+				<h4>Conclusion</h4>
 				<ul>
-					<li>Souvent négligées, pourtant vitale</li>
-					<li>Facilite la réutilisation</li>
-					<li>Si profits liés a l'utilisation, augmente les profits</li>
-					<li>Même en interne, même seul facilite la réutilisation. Je suis le premier lecteur de mes documentations d'API.</li>
-					<li>Utiliser des standard : le developpeur rentre plus facilement dans la documentation</li>
-				</ul>
-			</section>
-			<section>
-				<h4>Objectif</h4>
-				<ul>
-					<li>Utilisation par le maximum de monde</li>
-					<li>Un développeur doit pouvoir faire le premier appel en moins de 5 minutes</li>
-					<li>Bien comprendre l'intéret, la valeur ajoutée de votre API</li>
+					<li>Monétisation, nouvelle opportunité de business</li>
+					<li>contrat + manuel = meilleure qualité</li>
+					<li>Avant tout utile en interne</li>
+					<li>Tendance de fond: si on y va pas on peut être remplacé à terme (ex IGN, Pages Jaunes, ...)</li>
 				</ul>
 			</section>
 			<section>

@@ -14,3 +14,8 @@ Cloner ce repo et :
 cd path/to/project
 reveal deploy
 ```
+
+## Resources
+
+ * http://www.dailymotion.com/video/xxqeka_smctalks-l-avenement-des-api-s2e3_tech
+ * http://www.zdnet.fr/actualites/les-api-futur-de-l-industrie-39809755.htm
